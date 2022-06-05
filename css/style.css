@@ -2337,4 +2337,38 @@ fadeIn {  from {
   background-size: cover;
 }
 
+.form-copy {
+  height: 60px;
+  margin: 0px;
+  width: 100%;
+  padding: 0 14px;
+  border: solid 1px #bfbfbf;
+  background: #f9f9f9;
+  border-radius: 5px;
+}
+
+button.btn-copy{
+  padding: 5px 20px;
+  color: rgb(5, 0, 0);
+  background-color: #fefeff;
+  border-color: #082b8a;
+  border-top: solid 2px #20077a;
+  border-left: solid 2px #0a4eb4;
+  border-right: solid 2px #0f056e;
+  border-bottom: solid 2px #0b15a5;
+}
+button.btn-copy:hover{
+  background-color: #419641;
+}
+input#code:focus {
+  outline: none!important;
+}
+.btn-circle {
+  border-radius: 50%;
+  position: relative;
+  top: -29px;
+  float: right;
+  border-color: #5cb85c;
+}
+
 /*# sourceMappingURL=style.css.map */

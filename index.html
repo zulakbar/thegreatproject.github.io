@@ -75,7 +75,11 @@
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
-	
+	<!-- cara copy -->
+	<link rel="stylesheet" type="text/css" href="https://skylightanimation.github.io/assets/plugin/font-awesome/4.7.0/css/font-awesome.css">
+	<!--link rel="stylesheet" type="text/css" href="https://skylightanimation.github.io/assets/plugin/bootstrap/3.3.7/bootstrap.min.css"-->
+	<script type="text/javascript" src="https://skylightanimation.github.io/assets/plugin/jquery/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="https://skylightanimation.github.io/assets/plugin/bootstrap/3.3.7/bootstrap.min.js"></script>
 
 </head>
 <body>
@@ -171,7 +175,7 @@
 			<div class="couple-wrap animate-box">
 				<div class="couple-half">
 					<div class="groom">
-						<img src="images/Zul-01.jpg" alt="groom" class="img-responsive">
+						<img src="images/Zul.png" alt="groom" class="img-responsive">
 					</div>
 					<div class="desc-groom">
 						<h2 style="font-family:'Candara'">Zulkarnaen Akbar</h2>
@@ -190,7 +194,7 @@
 				<p class="heart text-center"><i class="icon-heart2"></i></p>
 				<div class="couple-half">
 					<div class="bride">
-						<img src="images/Azah-01.jpg" alt="groom" class="img-responsive">
+						<img src="images/Azah.png" alt="groom" class="img-responsive">
 					</div>
 					<div class="desc-bride">
 						<h2 style="font-family:'Candara'">Itmamul Mafazah</h2>
@@ -451,17 +455,60 @@
 					</form>
 				</div>
 			</div>
-					
+			
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 					<h2>Gift</h2>
 					<span style="color: #bf9b73">Untuk tamu undangan yang mau mengirimkan gift bisa ke alamat berikut.</span>
+					<p style="font-family: 'Courgette', Arial, serif">Alamat : Cendana Residence Block E12/08, Ciputat, Tangerang Selatan</p>
+					<p style="font-family: 'Courgette', Arial, serif">Atau</p>
+					<p style="font-family: 'Courgette', Arial, serif">Rekening BCA a.n. Zulkarnaen Akbar</p></p>
+						<div class="thumbnail text-box">
+							<div id="text-copy">
+								4970434211
+							</div>
+							<button class="btn btn-xs btn-copy btn-primary">
+								<span class="fa fa-copy"></span>
+							</button>
+						</div>	
+
+					<style type="text/css">
+						.btn-copy{
+							position: absolute;
+							top: 0;
+							right: 0;
+							margin: 5px 10px;
+						}
+						.text-box{
+							position: relative;
+						}
+					</style>
+
+					<!--input class="form-copy" id="text-copy" value="4970434211">
+					<button class="btn btn-copy btn-circle" onclick="copyText()">
+						<span class="fa fa-copy"></span> COPY
+					</button--> 	
+				</div>
+			</div>
+
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Open House</h2>
+					<span style="color: #bf9b73">Untuk tamu yang berada diarea jabodetabek kamu juga mangadakan open house</span>
+					<div class="event-col">
+						<i class="icon-clock"></i>
+						<span>09:00</span>
+						<span>Selesai</span>
+					</div>
+					<div class="event-col">
+						<i class="icon-calendar"></i>
+						<span>Minggu, </span>
+						<span class="tanggal">31 Juli 2022</span>
+					</div>
+					<p style="font-family: 'Courgette', Arial, serif">Alamat : Cendana Residence Block E12/08, Ciputat, Tangerang Selatan</p>
+						<a href="https://goo.gl/maps/UoAfWTh7yy9U3Z5D6" target="_blank"
+				   		class="btn btn-primary">Penunjuk Lokasi <i class="icon-map2"></i></a>
 					<p>
-						<h3> Alamat Rumah : Cendana Residence Block E12 No.8, Ciputat, Tangerang Selatan</h3> 
-						<h3> Atau</h3>
-						<h3> Rekening BCA : 4970434211 a.n. Zulkarnaen Akbar</h3> 
-						<button type="copy" class="btn btn-primary">Copy Rekening</button>
-					</p>
 				</div>
 			</div>
 		</div>
@@ -570,6 +617,29 @@
 		$("html, body").animate({ scrollTop: $(`#${el}`).offset().top }, 1000);
 	}
 </script>
+
+<script>
+// gak jadi dipake
+//	function copyText() {  
+//    var copyText = document.getElementById("text-copy");  
+//    copyText.select();  
+//    document.execCommand("copy");
+//}
+</script>
+<!-- jadinya pake ini gak jadi pake yang diatas-->
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.btn-copy').on("click", function(){
+            var value = $('#text-copy').text();
+           
+            var $tempCopy = $("<input>");
+                $("body").append($tempCopy);
+                $tempCopy.val(value).select();
+                document.execCommand("copy");
+                $tempCopy.remove();
+        })
+    })
+</script> 
 
 <script>
 	// 2. This code loads the IFrame Player API code asynchronously.
@@ -683,64 +753,64 @@
 		slideDelay: 400,
 		dynamicEl: [
 			{
-				src: 'images/gallery/Forty4-68.jpg',
-				thumb: 'images/gallery/Forty4-68.jpg',
+				src: 'images/gallery/Forty4-68.png',
+				thumb: 'images/gallery/Forty4-68.png',
 				/*subHtml: `<div class="lightGallery-captions">
 					<h4>Caption 1</h4>
 					<p>Description of the slide 1</p>
 				</div>`,*/
 			},{
-				src: 'images/gallery/Forty4.jpg',
-				thumb: 'images/gallery/Forty4.jpg',
+				src: 'images/gallery/Forty4.png',
+				thumb: 'images/gallery/Forty4.png',
 				/*subHtml: `<div class="lightGallery-captions">
 					<h4>Caption 1</h4>
 					<p>Description of the slide 1</p>
 				</div>`,*/
 			},{
-				src: 'images/gallery/Forty4-14.jpg',
-				thumb: 'images/gallery/Forty4-14.jpg',
+				src: 'images/gallery/Forty4-14.png',
+				thumb: 'images/gallery/Forty4-14.png',
 				/*subHtml: `<div class="lightGallery-captions">
 					<h4>Caption 1</h4>
 					<p>Description of the slide 1</p>
 				</div>`,*/
 			},{
-				src: 'images/gallery/Forty4-15.jpg',
-				thumb: 'images/gallery/Forty4-15.jpg',
+				src: 'images/gallery/Forty4-15.png',
+				thumb: 'images/gallery/Forty4-15.png',
 				/*subHtml: `<div class="lightGallery-captions">
 					<h4>Caption 1</h4>
 					<p>Description of the slide 1</p>
 				</div>`,*/
 			},{
-				src: 'images/gallery/Forty4-21.jpg',
-				thumb: 'images/gallery/Forty4-21.jpg',
+				src: 'images/gallery/Forty4-21.png',
+				thumb: 'images/gallery/Forty4-21.png',
 				/*subHtml: `<div class="lightGallery-captions">
 					<h4>Caption 1</h4>
 					<p>Description of the slide 1</p>
 				</div>`,*/
 			},{
-				src: 'images/gallery/Forty4-81.jpg',
-				thumb: 'images/gallery/Forty4-81.jpg',
+				src: 'images/gallery/Forty4-81.png',
+				thumb: 'images/gallery/Forty4-81.png',
 				/*subHtml: `<div class="lightGallery-captions">
 					<h4>Caption 1</h4>
 					<p>Description of the slide 1</p>
 				</div>`,*/
 			},{
-				src: 'images/gallery/Forty4-56.jpg',
-				thumb: 'images/gallery/Forty4-56.jpg',
+				src: 'images/gallery/Forty4-56.png',
+				thumb: 'images/gallery/Forty4-56.png',
 				/*subHtml: `<div class="lightGallery-captions">
 					<h4>Caption 1</h4>
 					<p>Description of the slide 1</p>
 				</div>`,*/
 			},{
-				src: 'images/gallery/Forty4-64.jpg',
-				thumb: 'images/gallery/Forty4-64.jpg',
+				src: 'images/gallery/Forty4-64.png',
+				thumb: 'images/gallery/Forty4-64.png',
 				/*subHtml: `<div class="lightGallery-captions">
 					<h4>Caption 1</h4>
 					<p>Description of the slide 1</p>
 				</div>`,*/
 			},{
-				src: 'images/gallery/Forty4-75.jpg',
-				thumb: 'images/gallery/Forty4-75.jpg',
+				src: 'images/gallery/Forty4-75.png',
+				thumb: 'images/gallery/Forty4-75.png',
 				/*subHtml: `<div class="lightGallery-captions">
 					<h4>Caption 1</h4>
 					<p>Description of the slide 1</p>
